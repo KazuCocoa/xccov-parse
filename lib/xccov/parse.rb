@@ -15,7 +15,9 @@ module Xccov
     end
 
     def targets_line_coverage
-      @data.reduce({}) { |memo, data| memo.merge({data["name"] => data["lineCoverage"] })}
+      @data.reduce({}) do |memo, data|
+        memo.merge({ data["name"] => data["lineCoverage"] })
+      end
     end
   end
 end
