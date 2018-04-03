@@ -30,7 +30,7 @@ Or install it yourself as:
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/Kazuaki MATSUO/xccov-parse.
+Bug reports and pull requests are welcome on GitHub at https://github.com/KazuCocoa/xccov-parse.
 
 
 ## License
