@@ -19,7 +19,10 @@ Or install it yourself as:
 ## Usage
 
 1. Generate the json result by `xcrun xccov view --only-targets --json`
-    ```
+    ```bash
+    # target: https://github.com/KazuCocoa/test.examples
+    $ git clone https://github.com/KazuCocoa/test.examples && cd test.examples
+    $ xcodebuild -workspace test.examples.xcworkspace -scheme test.examples -derivedDataPath Build/ -destination 'platform=iOS Simulator,OS=11.3,name=iPhone 7' -enableCodeCoverage YES clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
     $ xcrun xccov view --only-targets --json Build/Logs/Test/*.xccovreport > result.json
     ```
 2. Read the JSON and get a particular line coverage
