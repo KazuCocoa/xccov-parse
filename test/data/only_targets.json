@@ -1,0 +1,44 @@
+[
+  {
+    "coveredLines": 64,
+    "lineCoverage": 0.43243243243243246,
+    "name": "test.examplesEarlGreyTests.xctest",
+    "executableLines": 148,
+    "buildProductPath": "/Users/kazuaki/GitHub/test.examples/Build/Build/Products/Debug-iphonesimulator/test.examples.app/PlugIns/test.examplesEarlGreyTests.xctest/test.examplesEarlGreyTests"
+  },
+  {
+    "coveredLines": 0,
+    "lineCoverage": 0,
+    "name": "nanopb.framework",
+    "executableLines": 1543,
+    "buildProductPath": "/Users/kazuaki/GitHub/test.examples/Build/Build/Products/Debug-iphonesimulator/nanopb/nanopb.framework/nanopb"
+  },
+  {
+    "coveredLines": 0,
+    "lineCoverage": 0,
+    "name": "GoogleToolboxForMac.framework",
+    "executableLines": 389,
+    "buildProductPath": "/Users/kazuaki/GitHub/test.examples/Build/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/GoogleToolboxForMac"
+  },
+  {
+    "coveredLines": 29,
+    "lineCoverage": 1,
+    "name": "test.examplesUITests.xctest",
+    "executableLines": 29,
+    "buildProductPath": "/Users/kazuaki/GitHub/test.examples/Build/Build/Products/Debug-iphonesimulator/test.examplesUITests-Runner.app/PlugIns/test.examplesUITests.xctest/test.examplesUITests"
+  },
+  {
+    "coveredLines": 14,
+    "lineCoverage": 0.35,
+    "name": "test.examples.app",
+    "executableLines": 40,
+    "buildProductPath": "/Users/kazuaki/GitHub/test.examples/Build/Build/Products/Debug-iphonesimulator/test.examples.app/test.examples"
+  },
+  {
+    "coveredLines": 18,
+    "lineCoverage": 1,
+    "name": "test.examplesTests.xctest",
+    "executableLines": 18,
+    "buildProductPath": "/Users/kazuaki/GitHub/test.examples/Build/Build/Products/Debug-iphonesimulator/test.examples.app/PlugIns/test.examplesTests.xctest/test.examplesTests"
+  }
+]

@@ -1,7 +1,21 @@
 require "xccov/parse/version"
+require "json"
 
 module Xccov
-  module Parse
-    # Your code goes here...
+  class Parse
+    attr_reader :data
+
+    def initialize(file: nil, json: nil)
+      @data = JSON.parse(json) if json
+      @data = JSON.parse(File.read(file)) if file
+    end
+
+    def targets_name
+      @data.map { |data| data["name"] }
+    end
+
+    def targets_line_coverage
+      @data.reduce({}) { |memo, data| memo.merge({data["name"] => data["lineCoverage"] })}
+    end
   end
 end
