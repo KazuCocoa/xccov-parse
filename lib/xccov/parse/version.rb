@@ -1,5 +1,3 @@
-module Xccov
-  class Parse
-    VERSION = "0.0.1"
-  end
+class Xccov
+  VERSION = "0.1.0"
 end

@@ -2,7 +2,7 @@ require 'test_helper'
 
 class Xccov::ParseTest < Minitest::Test
   def test_that_it_has_a_version_number
-    refute_nil ::Xccov::Parse::VERSION
+    refute_nil ::Xccov::VERSION
   end
 
   def test_parse_only_targets
@@ -38,5 +38,20 @@ class Xccov::ParseTest < Minitest::Test
 
     assert_equal expected, parsed.targets_line_coverage
     assert_equal 0.35, parsed.targets_line_coverage["test.examples.app"]
+  end
+
+  def test_help
+    xccov = Xccov.new
+    expected =<<-E
+xccov help [view]
+
+xccov view [--file-list | --file <path>] archive.xccovarchive
+
+xccov view [--only-targets | --files-for-target <target name> | --functions-for-file <name or path>] [--json] report.xccovreport
+
+xccov is a command line utility that can generate Xcode coverage data. For detailed information regarding a particular command, try help <command>.
+    E
+
+    assert_equal expected, xccov.help
   end
 end

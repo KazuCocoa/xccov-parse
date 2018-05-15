@@ -5,7 +5,7 @@ require 'xccov/parse/version'
 
 Gem::Specification.new do |spec|
   spec.name                  = "xccov-parse"
-  spec.version               = Xccov::Parse::VERSION
+  spec.version               = Xccov::VERSION
   spec.required_ruby_version = '>= 2.2'
   spec.authors               = ["Kazuaki MATSUO"]
   spec.email                 = ["fly.49.89.over@gmail.com"]
