@@ -60,8 +60,6 @@ class Xccov
     true
   end
 
-  private
-
   def get_xcrun
     cmd = `which xcrun`.strip
     return cmd unless cmd.empty?
