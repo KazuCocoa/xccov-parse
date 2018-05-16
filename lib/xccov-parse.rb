@@ -1,28 +1,8 @@
-require "xccov/parse/version"
-require "json"
-
-require 'open3'
+require "xccov-parse/version"
+require "xccov-parse/parse"
+require "open3"
 
 class Xccov
-  class Parse
-    attr_reader :data
-
-    def initialize(file: nil, json: nil)
-      @data = JSON.parse(json) if json
-      @data = JSON.parse(File.read(file)) if file
-    end
-
-    def targets_name
-      @data.map { |data| data["name"] }
-    end
-
-    def targets_line_coverage
-      @data.reduce({}) do |memo, data|
-        memo.merge({ data["name"] => data["lineCoverage"] })
-      end
-    end
-  end
-
   # @example
   #
   #     xccov = Xccov.new
